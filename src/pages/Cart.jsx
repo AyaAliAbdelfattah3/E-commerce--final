@@ -51,7 +51,7 @@ const Cart = () => {
                 >
                   <div>
                     <img
-                      className="h-[100px] w-[250px] object-contain rounded-lg bg-gray-50 p-2 dark:bg-black"
+                      className="h-[100px] w-[250px] object-contain rounded-lg  p-2 dark:bg-black"
                       src={item.image}
                       alt={item.title}
                     />

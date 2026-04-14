@@ -68,17 +68,17 @@ const ProductDetails = () => {
     <>
       <div className="container mx-auto p-10 ">
         {productId && (
-          <div className="flex flex-col md:flex-row gap-10 bg-white p-8 rounded-2xl shadow-xl mt-[60px] border border-purple-950 dark:bg-black/50">
+          <div className="flex flex-col md:flex-row text-sm gap-10 bg-white p-8 rounded-2xl shadow-xl mt-[60px] border border-purple-950 dark:bg-black/50">
             <img
               src={productId.image}
               alt={productId.title}
               className=" md:w-96 object-contain h-[200px]"
             />
             <div className="flex flex-col justify-center">
-              <p className="bg-[#340c4b] text-white p-2 rounded-lg text-xl w-40">
+              <p className="bg-[#340c4b] text-white p-2 rounded-lg text-xl w-[180px]">
                 {productId.category}
               </p>
-              <h1 className="text-4xl font-bold text-gray-800 mb-4 dark:text-white/90">
+              <h1 className="text-2xl font-bold text-gray-800 mb-4 dark:text-white/90">
                 {productId.title}
               </h1>
               <p className="text-gray-700 text-md mb-6 leading-relaxed dark:text-gray-500">
