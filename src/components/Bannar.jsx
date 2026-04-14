@@ -4,7 +4,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import { Autoplay } from "swiper/modules";
+
+import { Autoplay, Pagination } from "swiper/modules"; 
 import { bg1, bg2, bg3 } from "../assets";
 
 const Bannar = () => {
@@ -20,29 +21,46 @@ const Bannar = () => {
         pagination={{
           clickable: true,
         }}
-        modules={[Autoplay]}
-        className="mySwiper rounded-3xl overflow-hidden border border-transparent dark:border-purple-800/30 dark:bg-black"
+        modules={[Autoplay, Pagination]}
+        className="mySwiper rounded-2xl bg-black overflow-hidden  dark:border-purple-800/30 dark:bg-black"
       >
-        <SwiperSlide>
-          <img
-            src={bg1}
-            className="  w-full h-auto aspect-video md:aspect-[21/9] object-contain dark:brightness-[0.7] dark:grayscale-[0.2] transition-all duration-500"
-          />
-          <div className="absolute inset-0 bg-transparent dark:bg-[#1a0b2e]/50 transition-all duration-500 pointer-events-none"></div>
+        {/* الصورة الأولى */}
+        <SwiperSlide className="overflow-hidden">
+          <div className="relative w-full h-[300px] mt-10 md:h-[500px] lg:h-[600px]"> 
+            <img
+              src={bg1}
+              alt="Banner 1"
+              className="w-full h-full  object-center dark:brightness-[0.7] transition-all duration-500"
+              loading="lazy" 
+            />
+            <div className="absolute inset-0 dark:bg-[#1a0b2e]/50 pointer-events-none"></div>
+          </div>
         </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src={bg2}
-            className="w-full h-auto aspect-video md:aspect-[21/9] object-contain dark:brightness-[0.7] dark:grayscale-[0.2] transition-all duration-500"
-          />
-          <div className="absolute inset-0 bg-transparent dark:bg-[#1a0b2e]/40 transition-all duration-500 pointer-events-none"></div>
+
+        {/* الصورة الثانية - الآن أصبحت بنفس تنسيق الأولى تماماً */}
+        <SwiperSlide className="overflow-hidden">
+          <div className="relative w-full h-[300px] mt-10  md:h-[500px] lg:h-[600px]"> 
+            <img
+              src={bg2}
+              alt="Banner 2"
+              className="w-full h-full object-cover object-center dark:brightness-[0.7] transition-all duration-500"
+              loading="lazy" 
+            />
+            <div className="absolute inset-0 dark:bg-[#1a0b2e]/50 pointer-events-none"></div>
+          </div>
         </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src={bg3}
-            className="w-full h-auto aspect-video md:aspect-[21/9] object-contain dark:brightness-[0.7] dark:grayscale-[0.2] transition-all duration-500"
-          />
-          <div className="absolute inset-0 bg-transparent dark:bg-[#1a0b2e]/40 transition-all duration-500 pointer-events-none"></div>
+
+        {/* الصورة الثالثة */}
+        <SwiperSlide className="overflow-hidden">
+          <div className="relative w-full h-[300px] mt-10  md:h-[500px] lg:h-[600px]"> 
+            <img
+              src={bg3}
+              alt="Banner 3"
+              className="w-full h-full object-cover object-center dark:brightness-[0.7] transition-all duration-500"
+              loading="lazy" 
+            />
+            <div className="absolute inset-0 dark:bg-[#1a0b2e]/50 pointer-events-none"></div>
+          </div>
         </SwiperSlide>
       </Swiper>
     </>

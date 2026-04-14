@@ -44,7 +44,7 @@ const Category = () => {
 
 
   return (
-    <div className="relative z-[]999] flex flex-wrap items-center justify-center gap-8 p-4 mt-10 dark:bg-black">
+    <div className="relative z-[999] flex flex-wrap items-center justify-center gap-8 p-4 mt-10 dark:bg-black">
       <button
         onClick={() => {
           dispatch(updateCategory("all"));
@@ -67,7 +67,7 @@ const Category = () => {
           ? "bg-gray-500 text-black dark:bg-slate-700 dark:text-white"
           : "bg-[#340c4b] text-white hover:bg-[#f1ecce] hover:text-[#390368]"
       }
-      dark:bg-black dark:border-purple-500/50 dark:text-purple-400 dark:hover:bg-purple-900/30 dark:hover:text-purple-200`}
+      dark:bg-black border border-transparent dark:border-purple-500/50 dark:text-purple-400 dark:hover:bg-purple-900/30 dark:hover:text-purple-2000`}
         >
           {cat}
         </button>
