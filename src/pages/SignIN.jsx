@@ -93,7 +93,7 @@ const SignIN = () => {
 
       {/* Card */}
       <div data-aos="flip-left">
-        <div className="relative w-[400px] p-8 backdrop-blur-2xl bg-white/40 border border-white/50 shadow-2xl rounded-[35px] transition duration-500 dark:bg-black dark:border-purple-900">
+        <div className="relative w-[300px] md:w-[400px] p-8 backdrop-blur-2xl bg-white/40 border border-white/50 shadow-2xl rounded-[35px] transition duration-500 dark:bg-black dark:border-purple-900">
           {/* Illustration */}
           <div className="flex justify-center mb-6">
             <div className="w-16 h-16 bg-gradient-to-r from-[#381a50] to-[#e353e3]  rounded-[40%_60%_70%_30%] flex items-center justify-center shadow-lg">

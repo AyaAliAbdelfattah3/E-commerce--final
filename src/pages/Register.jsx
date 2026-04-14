@@ -86,7 +86,7 @@ const Register = () => {
       <div className="absolute w-[300px] h-[300px] bg-violet-300 opacity-30 blur-3xl bottom-[-100px] right-[-80px] rounded-full"></div>
       <div className="absolute w-[500px] h-[500px] bg-gradient-to-br from-indigo-200 to-violet-300 opacity-40 blur-2xl rounded-[60%_40%_30%_70%/60%_30%_70%_40%] animate-pulse"></div>
       <div data-aos="zoom-in">
-        <div className="relative w-[400px] p-8 backdrop-blur-2xl bg-white/40 border border-white/50 shadow-2xl rounded-[35px] transition duration-500 dark:bg-black dark:border-purple-900">
+        <div className="relative  w-[300px] md:w-[400px] p-8 backdrop-blur-2xl bg-white/40 border border-white/50 shadow-2xl rounded-[35px] transition duration-500 dark:bg-black dark:border-purple-900">
           {/* Illustration */}
           <div className="flex justify-center mb-6">
             <div className="w-16 h-16 bg-gradient-to-r from-[#381a50] to-[#e353e3]  rounded-[40%_60%_70%_30%] flex items-center justify-center shadow-lg">
