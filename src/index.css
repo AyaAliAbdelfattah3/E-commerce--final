@@ -1,0 +1,59 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+/* تأثير الزجاج لـ SweetAlert */
+.my-glass-popup {
+  background: rgba(255, 255, 255, 0.05) !important; /* شفافية خفيفة */
+  backdrop-filter: blur(20px) !important; /* تضبيب الخلفية */
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 30px !important; /* حواف دائرية مثل التصميم */
+  color: rgb(89, 9, 132) !important;
+
+}
+.my-glass-popup .swal2-title {
+ color: rgb(89, 9, 132) !important;
+   font-size: 2rem !important;
+   font-weight: bold;
+}
+/* تعديل لون النص الفرعي */
+.my-glass-popup .swal2-html-container {
+  color: #000000 !important;
+}
+
+@layer base {
+  body {
+    @apply transition-colors duration-500;
+  }
+  body {
+    /* الخلفية والنص في الوضع العادي والدارك */
+    @apply bg-white text-slate-900 transition-colors duration-500;
+    @apply dark:bg-black dark:text-slate-50;
+  }
+  
+}
+
+.my-glass {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 16px;
+}
+
+.my-glass-light {
+  background: rgba(255, 255, 255, 0.85) !important;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.my-glass-dark {
+  background: rgba(15, 23, 42, 0.85) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
