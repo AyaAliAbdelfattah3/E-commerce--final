@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Mail, KeyRound } from "lucide-react";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import * as Yup from "Yup";
+import * as Yup from 'yup';
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 
 import Aos from "aos";
