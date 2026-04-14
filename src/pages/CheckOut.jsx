@@ -1,4 +1,4 @@
-import * as Yup from "Yup";
+import * as Yup from 'yup';
 import { ErrorMessage, Formik, Form, Field } from "formik";
 import { master, visa } from "../assets";
 import { useSelector } from "react-redux";
