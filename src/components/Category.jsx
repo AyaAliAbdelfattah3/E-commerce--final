@@ -44,7 +44,7 @@ const Category = () => {
 
 
   return (
-    <div className="relative z-[]999] flex items-center justify-center gap-8 p-4 mt-10 dark:bg-black">
+    <div className="relative z-[]999] flex flex-wrap items-center justify-center gap-8 p-4 mt-10 dark:bg-black">
       <button
         onClick={() => {
           dispatch(updateCategory("all"));

@@ -26,21 +26,21 @@ const Bannar = () => {
         <SwiperSlide>
           <img
             src={bg1}
-            className="h-[670px] w-full dark:brightness-[0.7] dark:grayscale-[0.2] transition-all duration-500"
+            className="  w-full h-auto aspect-video md:aspect-[21/9] object-contain dark:brightness-[0.7] dark:grayscale-[0.2] transition-all duration-500"
           />
           <div className="absolute inset-0 bg-transparent dark:bg-[#1a0b2e]/50 transition-all duration-500 pointer-events-none"></div>
         </SwiperSlide>
         <SwiperSlide>
           <img
             src={bg2}
-            className="h-[670px] w-full dark:brightness-[0.7] dark:grayscale-[0.2] transition-all duration-500"
+            className="w-full h-auto aspect-video md:aspect-[21/9] object-contain dark:brightness-[0.7] dark:grayscale-[0.2] transition-all duration-500"
           />
           <div className="absolute inset-0 bg-transparent dark:bg-[#1a0b2e]/40 transition-all duration-500 pointer-events-none"></div>
         </SwiperSlide>
         <SwiperSlide>
           <img
             src={bg3}
-            className="h-[670px] w-full dark:brightness-[0.7] dark:grayscale-[0.2] transition-all duration-500"
+            className="w-full h-auto aspect-video md:aspect-[21/9] object-contain dark:brightness-[0.7] dark:grayscale-[0.2] transition-all duration-500"
           />
           <div className="absolute inset-0 bg-transparent dark:bg-[#1a0b2e]/40 transition-all duration-500 pointer-events-none"></div>
         </SwiperSlide>
