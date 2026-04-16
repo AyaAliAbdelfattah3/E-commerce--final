@@ -51,8 +51,7 @@ const Cart = () => {
                 >
                   <div>
                     <img
-                      className="h-[100px] w-[250px] object-contain rounded-lg  p-2 dark:bg-black"
-                      src={item.image}
+className="h-auto w-full max-w-[450px] md:w-[250px] md:h-[150px] object-contain rounded-lg p-2 dark:bg-black"                      src={item.image}
                       alt={item.title}
                     />
                   </div>
