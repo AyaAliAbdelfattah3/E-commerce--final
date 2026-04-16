@@ -286,7 +286,7 @@ const NavBar = () => {
 
             <div className="flex gap-6 text-gray-500">
               <Link
-                to="/cart"
+                to="/cart" onClick={() => setMenu(false)}
                 className="relative z-50 cursor-pointer hover:text-[#d5bee9] pointer-events-auto flex"
               >
                 <ShoppingCart />
@@ -298,18 +298,21 @@ const NavBar = () => {
               {userInfo ? (
                 <>
                   {userInfo.userName}
-                  <button onClick={handleLogout} className="" title="">
+                  <button onClick={() => {handleLogout()
+                    setMenu(false)
+                  }} className="" title="">
                     <LogOut />
                   </button>
                 </>
               ) : (
-                <Link to="/sign">
+                <Link to="/sign" onClick={() => setMenu(false)}>
                   <User />
                 </Link>
               )}
               <button
                 onClick={() => {
                   dispatch(setDark());
+                  setMenu(false)
                 }}
               >
                 {dark ? <SunMedium /> : <Moon />}
